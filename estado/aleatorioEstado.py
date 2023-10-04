@@ -21,6 +21,29 @@ def estados():
                "Rio Grande do Norte","Rio Grande do Sul","Rondônia","Roraima","Santa Catarina","São Paulo","Sergipe","Tocantins")
     pos = random.randint(0, (len(estados)-1))
     return estados[pos]
+def dicestados():
+    estados={}
+    estados['Acre']
+    estados['Alagoas']
+    estados['Amapá']
+    estados['Amazonas']
+    estados['Bahia']
+    estados['Ceará']
+    estados['Distrito Federal']
+    estados['Espírito Santo']
+    estados['Goiás']
+    estados['Maranhão']
+    estados['Mato Grosso']
+    estados['Mato Grosso do Sul']
+    estados['Minas Gerais']
+    estados['"Pará']
+    estados['Paraíba']
+    estados['Pernambuco']
+    estados['Piauí']
+    estados['Rio de Janeiro']
+    estados['Rio Grande do Norte']
+    estados['']
+
 
 def siglas(estado):
     estado = estado
