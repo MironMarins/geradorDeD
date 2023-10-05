@@ -15,7 +15,7 @@ def T_RHSTU_ENDERECO_UNIDHOSP(id_end_unidhosp,id_unid_hospital,id_logradouro,nr_
     endereco_unidhosp['DT_FIM'] = dt_fim
     endereco_unidhosp['DT_CADASTRO'] = dt_cadastro
     endereco_unidhosp['NM_USUARIO'] = nm_usuario
-    return logradouro 
+    return endereco_unidhosp 
 
 for i in range(repeticao):
             idEndUnidhosp = #PK
