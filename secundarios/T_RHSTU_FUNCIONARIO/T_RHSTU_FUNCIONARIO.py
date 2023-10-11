@@ -1,6 +1,6 @@
 import oracledb
-import aleatorio
-Funcionarios=[]
+import T_RHSTU_PACIENTE.aleatorio as aleatorio
+ListaFuncionarios=[]
 
 
 def T_RHSTU_FUNCIONARIO(id_func,id_superior,nm_func,nr_cpf,nr_rg,dt_nascimento,vl_salario,
@@ -39,7 +39,7 @@ for i in range(2):
  
 
             funcionario = T_RHSTU_FUNCIONARIO(id_func=,id_superior=,nm_func=,dt_nascimento=,vl_salario=,nr_rg=,nr_cpf=,st_func=,dt_cadastro=,nm_usuario=)
-            Funcionarios.append(funcionario)
+            ListaFuncionarios.append(funcionario)
             print(Funcionarios)
 
 

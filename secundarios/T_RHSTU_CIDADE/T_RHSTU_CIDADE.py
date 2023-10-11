@@ -1,5 +1,5 @@
 import oracledb
-import aleatorio
+import T_RHSTU_PACIENTE.aleatorio as aleatorio
 import aleatorioEstado
 import aleatorioCidade
 import T_RHSTU_ESTADO

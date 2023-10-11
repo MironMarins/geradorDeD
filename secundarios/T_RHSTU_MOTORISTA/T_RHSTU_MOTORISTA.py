@@ -1,6 +1,6 @@
 import oracledb
-import aleatorio
-Motoristas=[]
+import T_RHSTU_PACIENTE.aleatorio as aleatorio
+ListaMotoristas=[]
 
 
 def T_RHSTU_MOTORISTA(id_func,nr_crm,nm_categoria_cnh,dt_validade_cnh,dt_cadastro,nm_usuario):
@@ -30,8 +30,8 @@ for i in range(2):
  
 
             motorista = T_RHSTU_MOTORISTA(id_func=,nr_crm=,nm_categoria_cnh=,dt_validade_cnh=,dt_cadastro=,nm_usuario=)
-            Motoristas.append(motorista)
-            print(Motoristas)
+            ListaMotoristas.append(motorista)
+            print(ListaMotoristas)
 
 
 try:

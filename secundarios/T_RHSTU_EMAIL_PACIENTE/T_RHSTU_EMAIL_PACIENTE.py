@@ -1,7 +1,7 @@
 import oracledb
-import aleatorio
+import T_RHSTU_PACIENTE.aleatorio as aleatorio
 import aleatorioEstado
-EmailsPaciente=[]
+ListaEmailsPaciente=[]
 repeticao = 2
 
 def T_RHSTU_PACIENTE_EMAIL_PACIENTE(id_paciente,id_email,ds_email,tp_email,st_email,dt_cadastro,nm_usuario):
@@ -28,7 +28,7 @@ for i in range(repeticao):
 
 
             EmailPaciente = T_RHSTU_PACIENTE_EMAIL_PACIENTE(id_paciente=,id_email=,ds_email=,tp_email=,st_email=,dt_cadastro=dataCadastro,nm_usuario=usuarioNomeCompleto)
-            EmailsPaciente.append(EmailPaciente)
+            ListaEmailsPaciente.append(EmailPaciente)
             
 
 

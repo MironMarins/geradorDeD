@@ -1,7 +1,7 @@
 import oracledb
-import aleatorio
+import T_RHSTU_PACIENTE.aleatorio as aleatorio
 import aleatorioEstado
-Consultas=[]
+ListaConsultas=[]
 repeticao = 2
 
 def T_RHSTU_CONSULTA(id_unid_hospital,id_consulta,id_paciente,id_func,dt_hr_consulta,nr_consultorio,dt_cadastro,nm_usuario):
@@ -29,7 +29,7 @@ for i in range(repeticao):
 
 
             consulta = T_RHSTU_CONSULTA(id_unid_hospital=,id_consulta=,id_paciente=,id_func=,dt_hr_consulta=,nr_consultorio=,dt_cadastro=dataCadastro,nm_usuario=usuarioNomeCompleto)
-            Consultas.append(consulta)
+            ListaConsultas.append(consulta)
             
 
 

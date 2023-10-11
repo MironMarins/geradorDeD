@@ -1,7 +1,7 @@
 import oracledb
-import aleatorio
+import T_RHSTU_PACIENTE.aleatorio as aleatorio
 import aleatorioEstado
-listaEstados=[]
+listaBairros=[]
 repeticao = 2
 
 def T_RHSTU_BAIRRO(id_bairro,id_cidade,nm_bairro,nm_zona_bairro,dt_cadastro,nm_usuario):
@@ -26,7 +26,7 @@ for i in range(repeticao):
 
 
             bairro = T_RHSTU_BAIRRO(id_estado=idEstado,sg_estado=sgEstado,nm_estado=nmEstado,dt_cadastro=dataCadastro,nm_usuario=usuarioNomeCompleto)
-            listaEstados.append(bairro)
+            listaBairros.append(bairro)
             
 
 

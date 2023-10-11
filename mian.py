@@ -1,5 +1,5 @@
 import oracledb
-import aleatorio
+import T_RHSTU_PACIENTE.aleatorio as aleatorio
 import tabelas
 
 listaPacientes=[]

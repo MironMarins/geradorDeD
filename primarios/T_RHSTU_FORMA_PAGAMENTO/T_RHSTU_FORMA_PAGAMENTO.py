@@ -1,7 +1,7 @@
 import oracledb
-import aleatorio
+import T_RHSTU_PACIENTE.aleatorio as aleatorio
 import aleatorioEstado
-FormasDePagamento=[]
+ListaFormasDePagamento=[]
 repeticao = 2
 
 def T_RHSTU_FORMA_PAGAMENTO(id_forma_pagto,nm_forma_pagto,ds_forma_pagto,st_forma_pagto,dt_cadastro,nm_usuario):
@@ -25,7 +25,7 @@ for i in range(repeticao):
 
 
             FormaDePagamento = T_RHSTU_FORMA_PAGAMENTO(id_forma_pagto=,nm_forma_pagto=,ds_forma_pagto=,st_forma_pagto=,dt_cadastro=dataCadastro,nm_usuario=usuarioNomeCompleto)
-            FormasDePagamento.append(FormaDePagamento)
+            ListaFormasDePagamento.append(FormaDePagamento)
             
 
 

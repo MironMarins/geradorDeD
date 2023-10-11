@@ -1,6 +1,6 @@
 import oracledb
-import aleatorio
-Medicos=[]
+import T_RHSTU_PACIENTE.aleatorio as aleatorio
+ListaMedicos=[]
 
 
 def T_RHSTU_MEDICO(id_func,nr_crm,ds_especialidade,st_func,dt_cadastro,nm_usuario):
@@ -28,7 +28,7 @@ for i in range(2):
  
 
             medico = T_RHSTU_MEDICO(id_func=,nr_crm=,ds_especialidade=,dt_cadastro=,nm_usuario=)
-            Medicos.append(medico)
+            ListaMedicos.append(medico)
             print(Medicos)
 
 

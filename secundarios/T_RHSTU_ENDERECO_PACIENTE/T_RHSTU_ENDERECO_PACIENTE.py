@@ -1,7 +1,7 @@
 import oracledb
-import aleatorio
+import T_RHSTU_PACIENTE.aleatorio as aleatorio
 import aleatorioEstado
-EnderecoPacientes=[]
+ListaEnderecoPacientes=[]
 repeticao = 2
 
 def T_RHSTU_ENDERECO_PACIENTE(id_endereco,id_paciente,id_logradouro,nr_logradouro,ds_complemento_numero,ds_ponto_referencia,dt_inicio,dt_fim,dt_cadastro,nm_usuario):
@@ -34,7 +34,7 @@ for i in range(repeticao):
 
 
             enderecoPaciente = T_RHSTU_ENDERECO_PACIENTE(id_endereco=,id_paciente=,id_logradouro=,nr_logradouro=,ds_complemento_numero=,ds_ponto_referencia=,dt_inicio=,dt_fim=,dt_cadastro=dataCadastro,nm_usuario=usuarioNomeCompleto)
-            EnderecoPacientes.append(enderecoPaciente)
+            ListaEnderecoPacientes.append(enderecoPaciente)
             
 
 

@@ -1,7 +1,7 @@
 import oracledb
-import aleatorio
+import T_RHSTU_PACIENTE.aleatorio as aleatorio
 import aleatorioEstado
-listaEstados=[]
+ListaLogradouros=[]
 repeticao = 2
 
 def T_RHSTU_LOGRADOURO(id_logradouro,id_bairro,nm_logradouro,nr_cep,dt_cadastro,nm_usuario):
@@ -26,7 +26,7 @@ for i in range(repeticao):
 
 
             logradouro = T_RHSTU_LOGRADOURO(id_logradouro=idEstado,id_bairro=,nm_logradouro=,nr_cep=,dt_cadastro=dataCadastro,nm_usuario=usuarioNomeCompleto)
-            listaEstados.append(logradouro)
+            ListaLogradouros.append(logradouro)
             
 
 

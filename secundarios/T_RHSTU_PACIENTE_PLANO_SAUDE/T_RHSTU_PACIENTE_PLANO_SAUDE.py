@@ -1,7 +1,7 @@
 import oracledb
-import aleatorio
+import T_RHSTU_PACIENTE.aleatorio as aleatorio
 import aleatorioEstado
-PacientePlanosDeSaude=[]
+ListaPacientePlanosDeSaude=[]
 repeticao = 2
 
 def T_RHSTU_PACIENTE_PLANO_SAUDE(id_paciente_ps,id_paciente,id_plano_saude,nr_carteira_ps,dt_inicio,dt_fim,dt_cadastro,nm_usuario):
@@ -29,7 +29,7 @@ for i in range(repeticao):
 
 
             PacientePlanoDeSaude = T_RHSTU_PACIENTE_PLANO_SAUDE(id_paciente_ps=,id_paciente=,id_plano_saude=,nr_carteira_ps=,dt_inicio=,dt_fim=,dt_cadastro=dataCadastro,nm_usuario=usuarioNomeCompleto)
-            PacientePlanosDeSaude.append(PacientePlanoDeSaude)
+            ListaPacientePlanosDeSaude.append(PacientePlanoDeSaude)
             
 
 
