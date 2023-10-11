@@ -29,7 +29,7 @@ for i in range(repeticao):
 
 
             PacientePlanoDeSaude = T_RHSTU_PACIENTE_PLANO_SAUDE(id_paciente_ps=,id_paciente=,id_plano_saude=,nr_carteira_ps=,dt_inicio=,dt_fim=,dt_cadastro=dataCadastro,nm_usuario=usuarioNomeCompleto)
-            PacientePlanosDeSaude.append(PacientePlanosDeSaude)
+            PacientePlanosDeSaude.append(PacientePlanoDeSaude)
             
 
 
