@@ -13,15 +13,18 @@ def T_RHSTU_ESTADO(id_estado,sg_estado,nm_estado,dt_cadastro,nm_usuario):
     paciente['DT_CADASTRO'] = dt_cadastro
     paciente['NM_USUARIO'] = nm_usuario
     return paciente 
-
-for i in range(0,len(aleatorioEstado.estados)):
-            idEstado = i #PK
+i = 0
+while i < len(aleatorioEstado.estados):
+            
+            
             nmEstado = aleatorioEstado.estados[i]
             print(nmEstado)
             sgEstado = aleatorioEstado.siglas(nmEstado)
             print(sgEstado)
             dataCadastro = hoje
             usuarioNomeCompleto = "Miron"
+            i = i + 1
+            idEstado = i #PK
             if i == 1:
                     print("1")
             elif i == 100: 
@@ -42,7 +45,7 @@ for i in range(0,len(aleatorioEstado.estados)):
                     print("7500000")
             elif i == 9000000: 
                     print("9000000")
-
+        
 
             estado = T_RHSTU_ESTADO(id_estado=idEstado,sg_estado=sgEstado,nm_estado=nmEstado,dt_cadastro=dataCadastro,nm_usuario=usuarioNomeCompleto)
             listaEstados.append(estado)
