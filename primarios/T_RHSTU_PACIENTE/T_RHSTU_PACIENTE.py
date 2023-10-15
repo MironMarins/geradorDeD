@@ -1,7 +1,19 @@
 #import oracledb
 import aleatorioPaciente as aleatorio
-listaPacientes=[]
+import csv
+import datetime as dt
+hoje = dt.date.today()
 
+
+
+listaPacientes=[]
+with open('primarios\\T_RHSTU_PACIENTE\\cpf.csv',"r") as csvfile:
+                reader = csv.reader(csvfile)
+                listaCpf = list(reader)
+
+with open('primarios\\T_RHSTU_PACIENTE\\rg.csv',"r") as csvfile:
+                reader = csv.reader(csvfile)
+                listaRg = list(reader)
 
 def T_RHSTU_PACIENTE(id_paciente,nm_paciente,nr_cpf,nm_rg,dt_nascimento,fl_sexo_biologico,
                      ds_escolaridade,ds_estado_civil,nm_grupo_sanguineo,nr_altura,nr_peso,
@@ -25,26 +37,45 @@ def T_RHSTU_PACIENTE(id_paciente,nm_paciente,nr_cpf,nm_rg,dt_nascimento,fl_sexo_
 
 
 
-for i in range(2):
-            idPaciente = aleatorio.ids()
+for i in range(9000001):
+            idPaciente = i
             nome = aleatorio.nomes()
+
             sobrenome = aleatorio.sobrenomes()
-            nomeInteiro = nome + sobrenome
-            cpf = aleatorio.Cpf()
-            rg = aleatorio.Rg()
+            nomeInteiro = nome +" "+sobrenome
+            cpf = listaCpf[i]
+            rg = listaRg[i]
             idade = aleatorio.idades()
             dataNascimento = aleatorio.dataNascimento(idade=idade)
             sexoBiologico =  aleatorio.sexoBiologico()
-            escolaridade = aleatorio.escolaridadePaciente(idade=idade)
+            escolaridade = aleatorio.escolaridadePaciente()
             estadoCivil = aleatorio.estadoCivil(idade=idade)
             grupoSanguineo = aleatorio.tipoSanguineo()
             altura = aleatorio.Altura(novaidade=idade)
-            peso = aleatorio.Peso(novaidade=idade)
-            dataCadastro = aleatorio.dataInscricao(idade=idade)
-            usuarioNome = aleatorio.nomes()
-            usuarioSobreNome = aleatorio.sobrenomes()
-            usuarioNomeCompleto = usuarioNome + usuarioSobreNome
-
+            peso = aleatorio.Peso()
+            dataCadastro = hoje
+            usuarioNomeCompleto = "Miron"
+            if i == 1:
+                    print("1")
+            elif i == 100: 
+                    print("100")
+            elif i == 1000: 
+                    print("1000")
+            elif i == 10000: 
+                    print("10000")
+            elif i == 100000: 
+                    print("100000")
+            elif i == 1000000: 
+                    print("1000000")
+            elif i == 2500000: 
+                    print("2500000")
+            elif i == 5000000: 
+                    print("5000000")
+            elif i == 7500000: 
+                    print("7500000")
+            elif i == 9000000: 
+                    print("9000000")
+                    
 
 
 
@@ -55,7 +86,20 @@ for i in range(2):
                                     nm_grupo_sanguineo=grupoSanguineo,nr_altura=altura,nr_peso=peso,dt_cadastro=dataCadastro,
                                                             nm_usuario=usuarioNomeCompleto)
             listaPacientes.append(paciente)
-            print(listaPacientes)
+            
+with open('primarios\\T_RHSTU_PACIENTE\\T_RHSTU_PACIENTE.csv', 'w', newline='', encoding='utf-8') as file_csv:
+        # Criando objeto de Escrita do CSV
+        csv_writer = csv.DictWriter(file_csv, fieldnames=listaPacientes[0].keys())
+
+        # Escrevendo headers (Nome das colunas do CSV)
+        csv_writer.writeheader()
+
+        # Percorrendo o dicionario de dados
+        for line in listaPacientes:
+            # Escrevendo linha por linha
+            csv_writer.writerow(line)            
+            
+            #print(listaPacientes)
 
 
 #try:

@@ -3,22 +3,13 @@ import datetime as dt
 
 hoje = dt.date.today()
 
-def idEstado():
-    numeros = ("0", "1", "2", "3", "4", "5", "6", "7", "8", "9")
-    i = 0
-    ddd = ""
-    while i < 2:
-        pos = random.randint(0, (len(numeros)-1))
-        ddd = ddd + str(pos)
-        i = i + 1
-    return ddd
-result = idEstado()
-print(result)
-
-def estados():
-    estados = ("Acre","Alagoas", "Amapá", "Amazonas", "Bahia", "Ceará", "Distrito Federal","Espírito Santo","Goiás","Maranhão",
+estados = ("Acre","Alagoas", "Amapá", "Amazonas", "Bahia", "Ceará", "Distrito Federal","Espírito Santo","Goiás","Maranhão",
                "Mato Grosso","Mato Grosso do Sul","Minas Gerais","Pará","Paraíba","Paraná","Pernambuco","Piauí","Rio de Janeiro",
                "Rio Grande do Norte","Rio Grande do Sul","Rondônia","Roraima","Santa Catarina","São Paulo","Sergipe","Tocantins")
+siglas = ("AC","AL","AP","AM","BA","CE","DF","ES","GO","MA","MT","MS","MG","PA","PB","PR","PE","PI","RJ","RN","RS","RO","RR","SC","SP","SE","TO")
+
+def estado(estados):
+    
     pos = random.randint(0, (len(estados)-1))
     return estados[pos]
 def dicestados():
@@ -73,7 +64,7 @@ def siglas(estado):
         sigla = "MS"
     elif estado == "Minas Gerais":
         sigla = "MG"
-    elif estado == "Pará ":
+    elif estado == "Pará":
         sigla = "PA"
     elif estado == "Paraíba":
         sigla = "PB"

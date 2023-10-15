@@ -1,5 +1,4 @@
 import random
-import random
 from datetime import datetime, timedelta
 
 repetidas = []
@@ -22,6 +21,21 @@ def sobrenomes():
                   "Franco","Couto","Lobato","Duarte","Pacheco","Brites","Bastos","Pinho","Lacerda","Rios","Brandão")
     pos = random.randint(0, (len(sobrenomes)-1))
     return sobrenomes[pos]
+masc = nomesMasculinos()
+fem = nomesFemininos()
+
+def nomes():
+    nome1 = nomesMasculinos()
+    nome2 = nomesFemininos()
+    pos = random.randint(1,2)
+    #print(pos)
+    if pos == 2:
+        nome = nome1
+    elif pos == 1:
+        nome = nome2
+    return nome
+    
+
 def estadoCivil(idade):
     estadoCivil = ("solteiro","namorando","casado")
     
@@ -100,8 +114,8 @@ def Ddd():
 #------------------------------------------------------------------------------------------------------------------
 # escolher aleatoriamente idades
 #def idadeInfanto():
-    idade = random.randint(1,17)
-    return idade
+    #idade = random.randint(1,17)
+    #return idade
 
 #def idadeAdulto():
     idade = random.randint(18,59)
@@ -120,13 +134,11 @@ def Ddd():
 
 
 # pega uma idade para definir o ano de nascimento 
+
+
 def idades():
     pos = random.randint(18, 104)
-        
     return pos
-
-
-
 
 def dataNascimento(idade):
         anoNascimento = 2023 - idade
@@ -151,12 +163,7 @@ def dataNascimento(idade):
         return data
 
 
-for i in range(0,50):
-    
-    result = idades()
-    print(result)
-    result2 = dataNascimento(result)
-    print(result2)
+
 
 
 
