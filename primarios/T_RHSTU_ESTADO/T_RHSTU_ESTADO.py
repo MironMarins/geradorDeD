@@ -15,8 +15,7 @@ def T_RHSTU_ESTADO(id_estado,sg_estado,nm_estado,dt_cadastro,nm_usuario):
     return paciente 
 i = 0
 while i < len(aleatorioEstado.estados):
-            
-            
+                        
             nmEstado = aleatorioEstado.estados[i]
             print(nmEstado)
             sgEstado = aleatorioEstado.siglas(nmEstado)
