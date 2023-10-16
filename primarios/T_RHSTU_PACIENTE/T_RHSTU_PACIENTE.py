@@ -69,18 +69,7 @@ for i in range(9000001):
                     print("1000000")
             elif i == 2500000: 
                     print("2500000")
-            elif i == 5000000: 
-                    print("5000000")
-            elif i == 7500000: 
-                    print("7500000")
-            elif i == 9000000: 
-                    print("9000000")
-                    
-
-
-
- 
-
+            
             paciente = T_RHSTU_PACIENTE(id_paciente=idPaciente,nm_paciente=nomeInteiro,nr_cpf=cpf,nm_rg=rg,dt_nascimento=dataNascimento,
                                     fl_sexo_biologico=sexoBiologico,ds_escolaridade=escolaridade,ds_estado_civil=estadoCivil,
                                     nm_grupo_sanguineo=grupoSanguineo,nr_altura=altura,nr_peso=peso,dt_cadastro=dataCadastro,
