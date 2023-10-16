@@ -2,7 +2,6 @@ import datetime as dt
 import csv
 import aleatorioUnidHospitalar
 hoje = dt.date.today()
-listaEstados=[]
 listaUnidadesHospitalares=[]
 
 def T_RHSTU_UNID_HOSPITALAR(id_unid_hospital,nm_unid_hospitalar,nm_razao_social_unid_hosp,dt_fundacao,nr_logradouro,ds_complemento_numero,ds_ponto_referencia,dt_inicio,dt_termino,dt_cadastro,nm_usuario):
