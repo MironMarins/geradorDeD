@@ -21,12 +21,12 @@ def T_RHSTU_UNID_HOSPITALAR(id_unid_hospital,nm_unid_hospitalar,nm_razao_social_
     return unid_hospitalar 
 i=0
 while i< len(aleatorioUnidHospitalar.siglas):
-            nmUnidHospital = "Hospital Somos Todos Um " + "(" + aleatorioUnidHospitalar.siglas[i] + ")"
+            nmUnidHospital = "Hospital Somos Todos Um" + "(" + aleatorioUnidHospitalar.siglas[i] + ")"
             nmRazaoSocialUnidHosp = "Somos Todos Um S.A."
             dtFundacao = aleatorioUnidHospitalar.dataFundacao(aleatorioUnidHospitalar.idades())
             nrLogradouro = aleatorioUnidHospitalar.geraNrLogradouro()
-            dsComplementoNumero = aleatorioUnidHospitalar.rua()
-            dsPontoReferencia = "proximo ao" + aleatorioUnidHospitalar.pontosDeReferencia[i]
+            dsComplementoNumero = "None"
+            dsPontoReferencia = "proximo ao " + aleatorioUnidHospitalar.pontosDeReferencia[i]
             dtInicio = str((int(dtFundacao[:4])+1)) + dtFundacao[4:]
             dtTermino = "None"
             dataCadastro = hoje
@@ -35,7 +35,7 @@ while i< len(aleatorioUnidHospitalar.siglas):
             idUnidHospital = i
 
 
-            unidHospitalar = T_RHSTU_UNID_HOSPITALAR(id_unid_hospital=idUnidHospital,nm_unid_hospitalar=nmRazaoSocialUnidHosp,nm_razao_social_unid_hosp=nmRazaoSocialUnidHosp,dt_fundacao=dtFundacao,nr_logradouro=nrLogradouro,ds_complemento_numero=dsComplementoNumero,ds_ponto_referencia=dsPontoReferencia,dt_inicio=dtInicio,dt_termino=dtTermino,dt_cadastro=dataCadastro,nm_usuario=usuarioNomeCompleto)
+            unidHospitalar = T_RHSTU_UNID_HOSPITALAR(id_unid_hospital=idUnidHospital,nm_unid_hospitalar=nmUnidHospital,nm_razao_social_unid_hosp=nmRazaoSocialUnidHosp,dt_fundacao=dtFundacao,nr_logradouro=nrLogradouro,ds_complemento_numero=dsComplementoNumero,ds_ponto_referencia=dsPontoReferencia,dt_inicio=dtInicio,dt_termino=dtTermino,dt_cadastro=dataCadastro,nm_usuario=usuarioNomeCompleto)
             listaUnidadesHospitalares.append(unidHospitalar)
             
 with open('primarios\\T_RHSTU_UNID_HOSPITALAR\\T_RHSTU_UNID_HOSPITALAR.csv', 'w', newline='', encoding='utf-8') as file_csv:

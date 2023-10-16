@@ -38,12 +38,8 @@ def dataFundacao(idade):
         data = data + dia
         return data
 
-data = dataFundacao(idade=idades())
-print(data)
-print(data[:4])
-print(data[4:])
-novaData = str(int(data[0:4]) + 1) + data[4:]
-print(novaData)
+
+
 
 def generate_custom_zipcode():
     # Gera um CEP personalizado, no formato "XXXXX-XXX"
@@ -68,6 +64,6 @@ def generate_address_data(num_neighborhoods, addresses_per_neighborhood):
 def rua():
      rua = fake.street_address()
      return rua
-
-
+nome = rua()
+print(nome)
 
