@@ -19,13 +19,12 @@ for i in range(repeticao):
             idCidade =  #FK T_RHSTU_CIDADE
             nmBairro = 
             nmZonaBairro = 
-            dataCadastro = aleatorioEstado.hoje
-            usuarioNome = aleatorio.nomes()
-            usuarioSobreNome = aleatorio.sobrenomes()
-            usuarioNomeCompleto = usuarioNome + usuarioSobreNome
+            dtCadastro = aleatorioEstado.hoje
+            nmUsuario = aleatorio.nomes()
+            
 
 
-            bairro = T_RHSTU_BAIRRO(id_estado=idEstado,sg_estado=sgEstado,nm_estado=nmEstado,dt_cadastro=dataCadastro,nm_usuario=usuarioNomeCompleto)
+            bairro = T_RHSTU_BAIRRO(id_bairro=idBairro,id_cidade=idCidade,nm_bairro=nmBairro,nm_zona_bairro=nmZonaBairro,dt_cadastro=dtCadastro,nm_usuario=nmUsuario)
             listaBairros.append(bairro)
             
 

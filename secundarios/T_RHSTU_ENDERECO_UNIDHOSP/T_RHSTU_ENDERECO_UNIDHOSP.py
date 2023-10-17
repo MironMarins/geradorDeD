@@ -26,12 +26,9 @@ for i in range(repeticao):
             dtInicio = 
             dtFim = 
             dataCadastro = aleatorioEstado.hoje
-            usuarioNome = aleatorio.nomes()
-            usuarioSobreNome = aleatorio.sobrenomes()
-            usuarioNomeCompleto = usuarioNome + usuarioSobreNome
+            nmUsuario =
 
-
-            enderecoUnidhosp = T_RHSTU_ENDERECO_UNIDHOSP(id_end_unidhosp=,id_unid_hospital=,id_logradouro=,nr_logradouro=,ds_ponto_referencia=,dt_inicio=,dt_fim=,dt_cadastro=dataCadastro,nm_usuario=usuarioNomeCompleto)
+            enderecoUnidhosp = T_RHSTU_ENDERECO_UNIDHOSP(id_end_unidhosp=idEndUnidhosp,id_unid_hospital=idUnidHospital,id_logradouro=idLogradouro,nr_logradouro=nrLogradouro,ds_ponto_referencia=dsPontoReferencia,dt_inicio=dtInicio,dt_fim=dtFim,dt_cadastro=dataCadastro,nm_usuario=nmUsuario)
             ListaEnderecoUnidhosp.append(enderecoUnidhosp)
             
 

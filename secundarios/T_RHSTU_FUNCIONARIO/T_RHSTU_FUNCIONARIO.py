@@ -38,7 +38,7 @@ for i in range(2):
 
  
 
-            funcionario = T_RHSTU_FUNCIONARIO(id_func=,id_superior=,nm_func=,dt_nascimento=,vl_salario=,nr_rg=,nr_cpf=,st_func=,dt_cadastro=,nm_usuario=)
+            funcionario = T_RHSTU_FUNCIONARIO(id_func=idFunc,id_superior=idSuperior,nm_func=nmFunc,dt_nascimento=dtNascimento,vl_salario=vlSalario,nr_rg=nrRG,nr_cpf=nrCPF,st_func=stFunc,dt_cadastro=dtCadastro,nm_usuario=nmUsuario)
             ListaFuncionarios.append(funcionario)
             print(Funcionarios)
 

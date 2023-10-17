@@ -28,7 +28,7 @@ for i in range(repeticao):
 
 
 
-            PacientePlanoDeSaude = T_RHSTU_PACIENTE_PLANO_SAUDE(id_paciente_ps=,id_paciente=,id_plano_saude=,nr_carteira_ps=,dt_inicio=,dt_fim=,dt_cadastro=dataCadastro,nm_usuario=usuarioNomeCompleto)
+            PacientePlanoDeSaude = T_RHSTU_PACIENTE_PLANO_SAUDE(id_paciente_ps=idPacientePs,id_paciente=idPaciente,id_plano_saude=idPlanoSaude,nr_carteira_ps=nrCarteiraPs,dt_inicio=dtInicio,dt_fim=dtFim,dt_cadastro=dtCadastro,nm_usuario=nmUsuario)
             ListaPacientePlanosDeSaude.append(PacientePlanoDeSaude)
             
 

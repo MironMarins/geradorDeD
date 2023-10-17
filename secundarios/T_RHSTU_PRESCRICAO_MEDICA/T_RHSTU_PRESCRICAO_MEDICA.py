@@ -33,7 +33,7 @@ for i in range(repeticao):
 
 
 
-            prescricaoMedica = T_RHSTU_PRESCRICAO_MEDICA(id_prescricao_medica=,id_unid_hospital=,id_consulta=,id_medicamento=,ds_posologia=,ds_via=,ds_observacao_uso=,qt_medicamento=,dt_cadastro=dataCadastro,nm_usuario=usuarioNomeCompleto)
+            prescricaoMedica = T_RHSTU_PRESCRICAO_MEDICA(id_prescricao_medica=idPrescricaoMedica,id_unid_hospital=idUnidHospital,id_consulta=idConsulta,id_medicamento=idMedicamento,ds_posologia=dsPosologia,ds_via=dsVia,ds_observacao_uso=dsObservacaoUso,qt_medicamento=qtMedicamento,dt_cadastro=dataCadastro,nm_usuario=nmUsuario)
             ListaPrescricaoMedicas.append(prescricaoMedica)
             
 

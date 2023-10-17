@@ -27,7 +27,7 @@ for i in range(2):
 
  
 
-            medico = T_RHSTU_MEDICO(id_func=,nr_crm=,ds_especialidade=,dt_cadastro=,nm_usuario=)
+            medico = T_RHSTU_MEDICO(id_func=idFunc,nr_crm=nrCRM,ds_especialidade=dsEspecialidade,dt_cadastro=dtCadastro,nm_usuario=nmUsuario)
             ListaMedicos.append(medico)
             print(Medicos)
 

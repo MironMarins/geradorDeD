@@ -29,7 +29,7 @@ for i in range(2):
 
  
 
-            motorista = T_RHSTU_MOTORISTA(id_func=,nr_crm=,nm_categoria_cnh=,dt_validade_cnh=,dt_cadastro=,nm_usuario=)
+            motorista = T_RHSTU_MOTORISTA(id_func=idFunc,nr_crm=nrCRM,nm_categoria_cnh=nmCategoriaCNH,dt_validade_cnh=dtValidadeCNH,dt_cadastro=dtCadastro,nm_usuario=nmUsuario)
             ListaMotoristas.append(motorista)
             print(ListaMotoristas)
 

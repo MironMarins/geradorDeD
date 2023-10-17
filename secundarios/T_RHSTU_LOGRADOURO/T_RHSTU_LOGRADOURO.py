@@ -20,12 +20,10 @@ for i in range(repeticao):
             nmLogradouro = 
             nrCEP = 
             dataCadastro = aleatorioEstado.hoje
-            usuarioNome = aleatorio.nomes()
-            usuarioSobreNome = aleatorio.sobrenomes()
-            usuarioNomeCompleto = usuarioNome + usuarioSobreNome
+            nmUsuario =
 
 
-            logradouro = T_RHSTU_LOGRADOURO(id_logradouro=idEstado,id_bairro=,nm_logradouro=,nr_cep=,dt_cadastro=dataCadastro,nm_usuario=usuarioNomeCompleto)
+            logradouro = T_RHSTU_LOGRADOURO(id_logradouro=idLogradouro,id_bairro=idBairro,nm_logradouro=nmLogradouro,nr_cep=nrCEP,dt_cadastro=dataCadastro,nm_usuario=nmUsuario)
             ListaLogradouros.append(logradouro)
             
 

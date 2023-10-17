@@ -24,7 +24,7 @@ for i in range(repeticao):
 
 
 
-            medicamento = T_RHSTU_MEDICAMENTO(id_medicamento=,nm_medicamento=,ds_detalhada_medicamento=,nr_codigo_barras=,dt_cadastro=dataCadastro,nm_usuario=usuarioNomeCompleto)
+            medicamento = T_RHSTU_MEDICAMENTO(id_medicamento=idMedicamento,nm_medicamento=nmMedicamento,ds_detalhada_medicamento=dsDetalhadaMedicamento,nr_codigo_barras=nrCodigoBarras,dt_cadastro=dtCadastro,nm_usuario=nmUsuario)
             ListaMedicamentos.append(medicamento)
             
 

@@ -27,7 +27,7 @@ for i in range(repeticao):
 
 
 
-            EmailPaciente = T_RHSTU_PACIENTE_EMAIL_PACIENTE(id_paciente=,id_email=,ds_email=,tp_email=,st_email=,dt_cadastro=dataCadastro,nm_usuario=usuarioNomeCompleto)
+            EmailPaciente = T_RHSTU_PACIENTE_EMAIL_PACIENTE(id_paciente=idPaciente,id_email=idEmail,ds_email=dsEmail,tp_email=tpEmail,st_email=stEmail,dt_cadastro=dtCadastro,nm_usuario=nmUsuario)
             ListaEmailsPaciente.append(EmailPaciente)
             
 

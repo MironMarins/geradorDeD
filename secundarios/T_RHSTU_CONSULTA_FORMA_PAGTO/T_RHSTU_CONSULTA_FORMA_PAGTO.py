@@ -31,7 +31,7 @@ for i in range(repeticao):
 
 
 
-            ConsultaFormaDePagamento = T_RHSTU_CONSULTA_FORMA_PAGTO(id_consulta_forma_pagto=,id_unid_hospital=,id_consulta=,id_paciente_ps=,id_forma_pagto=,dt_pagto_consulta=,st_pagto_consulta=,dt_cadastro=dataCadastro,nm_usuario=usuarioNomeCompleto)
+            ConsultaFormaDePagamento = T_RHSTU_CONSULTA_FORMA_PAGTO(id_consulta_forma_pagto=idConsultaFormaPagto,id_unid_hospital=idUnidHospital,id_consulta=idConsulta,id_paciente_ps=idPacientePs,id_forma_pagto=idFormaPagto,dt_pagto_consulta=dtPagtoConsulta,st_pagto_consulta=stPagtoConsulta,dt_cadastro=dtCadastro,nm_usuario=nmUsuario)
             ListaConsultaFormasDePagamento.append(ConsultaFormaDePagamento)
             
 

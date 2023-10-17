@@ -27,12 +27,10 @@ for i in range(repeticao):
             nrDDD =
             nrTelefone =
             dtCadastro =
-            usuarioNome = aleatorio.nomes()
-            usuarioSobreNome = aleatorio.sobrenomes()
-            usuarioNomeCompleto = usuarioNome + usuarioSobreNome
+            nmUsuario =
 
 
-            ContatoPaciente = T_RHSTU_CONTATO_PACIENTE(id_paciente=,id_contato=,id_tipo_contato=,nm_contato=,nr_ddd=,nr_ddi=,nr_telefone=,dt_cadastro=dataCadastro,nm_usuario=usuarioNomeCompleto)
+            ContatoPaciente = T_RHSTU_CONTATO_PACIENTE(id_paciente=idPaciente,id_contato=idContato,id_tipo_contato=IdTipoContato,nm_contato=nmContato,nr_ddd=nrDDD,nr_ddi=nrDDI,nr_telefone=nrTelefone,dt_cadastro=dtCadastro,nm_usuario=nmUsuario)
             ListaContatoPacientes.append(ContatoPaciente)
             
 

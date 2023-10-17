@@ -31,7 +31,7 @@ for i in range(repeticao):
 
 
 
-            TelefonePaciente = T_RHSTU_PACIENTE_TELEFONE_PACIENTE(id_paciente=,id_telefone=,nr_ddi=,nr_ddd=,nr_telefone=,tp_telepone=,st_telefone=,dt_cadastro=dataCadastro,nm_usuario=usuarioNomeCompleto)
+            TelefonePaciente = T_RHSTU_PACIENTE_TELEFONE_PACIENTE(id_paciente=idPaciente,id_telefone=idTelefone,nr_ddi=nrDDI,nr_ddd=nrDDD,nr_telefone=nrTelefone,tp_telepone=tpTelepone,st_telefone=stTelefone,dt_cadastro=dtCadastro,nm_usuario=nmUsuario)
             ListaTelefonesPaciente.append(TelefonePaciente)
             
 

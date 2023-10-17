@@ -28,12 +28,10 @@ for i in range(repeticao):
             dtInicio = 
             dtFim = 
             dataCadastro = aleatorioEstado.hoje
-            usuarioNome = aleatorio.nomes()
-            usuarioSobreNome = aleatorio.sobrenomes()
-            usuarioNomeCompleto = usuarioNome + usuarioSobreNome
+            nmUsuario = 
 
 
-            enderecoPaciente = T_RHSTU_ENDERECO_PACIENTE(id_endereco=,id_paciente=,id_logradouro=,nr_logradouro=,ds_complemento_numero=,ds_ponto_referencia=,dt_inicio=,dt_fim=,dt_cadastro=dataCadastro,nm_usuario=usuarioNomeCompleto)
+            enderecoPaciente = T_RHSTU_ENDERECO_PACIENTE(id_endereco=idEdenreco,id_paciente=idPaciente,id_logradouro=idLogradouro,nr_logradouro=nrLogradouro,ds_complemento_numero=dsComplementoNumero,ds_ponto_referencia=dsPontoReferencia,dt_inicio=dtInicio,dt_fim=dtFim,dt_cadastro=dataCadastro,nm_usuario=nmUsuario)
             ListaEnderecoPacientes.append(enderecoPaciente)
             
 
