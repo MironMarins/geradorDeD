@@ -1,0 +1,7 @@
+ID_FORMA_PAGTO,NM_FORMA_PAGTO,DS_FORMA_PAGTO,ST_FORMA_PAGTO,DT_CADASTRO,NM_USUARIO
+1,Gratuito,Por conta da casa,A,2023-10-15,Miron
+2,Plano de Saude,precisamos de informações do seu plano de suade,A,2023-10-15,Miron
+3,Dinheiro,Apenas moedas brazileiras,A,2023-10-15,Miron
+4,Cartão de Credito,Aceitamos todas as formas de cartões de credito,A,2023-10-15,Miron
+5,Cartão de Debito,Aceitamos todas as formas de cartões de Debito,A,2023-10-15,Miron
+6,Pix,Informar ao cliente a senha do wifi,A,2023-10-15,Miron
