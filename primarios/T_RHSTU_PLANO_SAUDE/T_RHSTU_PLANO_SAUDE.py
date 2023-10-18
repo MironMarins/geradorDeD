@@ -27,7 +27,10 @@ while i < len(aleatorioPlanoSaude.planos_de_saude_reais):
             nmFantasiaPlanoSaude = aleatorioPlanoSaude.planos_de_saude_reais[i]
             dsPlanoSaude = aleatorioPlanoSaude.descricaoPS()
             nrCNPJ = aleatorioPlanoSaude.cnpjReais[i]
-            nmContato = aleatorioPlanoSaude.nomes()
+            primeiroNome = aleatorioPlanoSaude.nomes()
+            sobreNome = aleatorioPlanoSaude.sobrenomes()
+            nmContato = primeiroNome + " " + sobreNome
+            
             dsTelefone = aleatorioPlanoSaude.randTelefones()
             dtInicio = aleatorioPlanoSaude.dataFundacao(aleatorioPlanoSaude.idades())
             dtFim = "None"
