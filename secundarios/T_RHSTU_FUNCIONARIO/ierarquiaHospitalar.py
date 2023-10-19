@@ -9,45 +9,45 @@ hierarquiaHosp = []
 
 
 
-def presiDic(numero,nome,subalterno):
+def presiDic(numero,nome):
     presidente ={}
     presidente['numero'] = numero
     presidente['nome'] = nome
     presidente['cargo'] = "presidente"
-    presidente['subalterno'] = subalterno
+    presidente['superior'] = None
     return presidente
 #listaPresidente.append(presiDic(1,aleatorioFuncionario.nomes()+ " "+ aleatorioFuncionario.sobrenomes(),))
-def dretorDic(numero,nome,subalterno):
+def dretorDic(numero,nome,superior):
     diretor ={}
     diretor['numero'] = numero
     diretor['nome']= nome
     diretor['cargo']= "diretor"
-    diretor['subalterno'] = subalterno
+    diretor['superior'] = superior
     return diretor
-def gerenteDic(numero,nome,subalterno):
+def gerenteDic(numero,nome,superior):
     gerente ={}
     gerente['numero'] = numero
     gerente['nome']= nome
     gerente['cargo'] = "gerente"
-    gerente['subalterno'] = subalterno
+    gerente['superior'] = superior
     return gerente
 
-def CoordenadorDic(numero,nome,subalterno):
+def CoordenadorDic(numero,nome,superior):
     coordenador ={}
     coordenador['numero'] = numero
     coordenador['nome']= nome
     coordenador['cargo'] = "coordenador"
-    coordenador['subalterno'] = subalterno
+    coordenador['superior'] = superior
 
     return coordenador
 #listaCoodenador.append(CoordenadorDic(1,aleatorioFuncionario.nomes()+ " "+ aleatorioFuncionario.sobrenomes(),"medico"))
-def funcionarioDic(numero,nome,cargo):
+def funcionarioDic(numero,nome,cargo,superior):
 
     funcionario ={}
     funcionario['numero'] = numero
     funcionario['nome']= nome
     funcionario['cargo']=cargo
-    
+    funcionario['superior']=superior
     return funcionario
 
 c=0
@@ -66,54 +66,54 @@ print(c)
 #primeira lista de funcionarios
 
 listafunc=[]
-for f in range(0,18):
+for f in range(0,2):
         listafunc.append(funcionarioDic(f+1,aleatorioFuncionario.nomes()+ " "+ aleatorioFuncionario.sobrenomes(),"medico"))
 #primeira lista coordenadores 
 listaCoodenador=[]
 
-for k in range(0,7):
+for k in range(0,2):
     listaCoodenador.append(CoordenadorDic(k+1,aleatorioFuncionario.nomes()+ " "+ aleatorioFuncionario.sobrenomes(),listafunc)) 
     listafunc=[]
-    for f in range(0,18):
+    for f in range(0,2):
         listafunc.append(funcionarioDic(f+1,aleatorioFuncionario.nomes()+ " "+ aleatorioFuncionario.sobrenomes(),"medico"))
 #primeira lista de gerente
 listaGerente=[]
-for g in range(0,5):
+for g in range(0,2):
      listaGerente.append(gerenteDic(g+1,aleatorioFuncionario.nomes()+ " "+ aleatorioFuncionario.sobrenomes(),listaCoodenador))
      listaCoodenador=[]
-     for k2 in range(0,7):
+     for k2 in range(0,2):
         listaCoodenador.append(CoordenadorDic(k2+1,aleatorioFuncionario.nomes()+ " "+ aleatorioFuncionario.sobrenomes(),listafunc))
         listafunc=[]
-        for f in range(0,18):
+        for f in range(0,2):
             listafunc.append(funcionarioDic(f+1,aleatorioFuncionario.nomes()+ " "+ aleatorioFuncionario.sobrenomes(),"medico"))  
 #primeira lista de diretores
 listaDiretor =[]
-for d in range(0,3):
+for d in range(0,2):
     listaDiretor.append(dretorDic(d+1,aleatorioFuncionario.nomes()+ " "+ aleatorioFuncionario.sobrenomes(),listaGerente))
     listaGerente=[]
-    for g in range(0,5):
+    for g in range(0,2):
         listaGerente.append(gerenteDic(g+1,aleatorioFuncionario.nomes()+ " "+ aleatorioFuncionario.sobrenomes(),listaCoodenador))
         listaCoodenador=[]
-        for k2 in range(0,7):
+        for k2 in range(0,2):
             listaCoodenador.append(CoordenadorDic(k2+1,aleatorioFuncionario.nomes()+ " "+ aleatorioFuncionario.sobrenomes(),listafunc))
             listafunc=[]
-            for f in range(0,18):
+            for f in range(0,2):
                 listafunc.append(funcionarioDic(f+1,aleatorioFuncionario.nomes()+ " "+ aleatorioFuncionario.sobrenomes(),"medico"))
 #primeira lista de presidentes
 listaPresidente=[]
-for p in range(0,27):
+for p in range(0,2):
     listaPresidente.append(presiDic(p+1,aleatorioFuncionario.nomes()+ " "+ aleatorioFuncionario.sobrenomes(),listaDiretor))
     listaDiretor=[]
-    for d in range(0,3):
+    for d in range(0,2):
         listaDiretor.append(dretorDic(d+1,aleatorioFuncionario.nomes()+ " "+ aleatorioFuncionario.sobrenomes(),listaGerente))
         listaGerente=[]
-        for g in range(0,5):
+        for g in range(0,2):
             listaGerente.append(gerenteDic(g+1,aleatorioFuncionario.nomes()+ " "+ aleatorioFuncionario.sobrenomes(),listaCoodenador))
             listaCoodenador=[]
-            for k2 in range(0,7):
+            for k2 in range(0,2):
                 listaCoodenador.append(CoordenadorDic(k2+1,aleatorioFuncionario.nomes()+ " "+ aleatorioFuncionario.sobrenomes(),listafunc))
                 listafunc=[]
-                for f in range(0,18):
+                for f in range(0,2):
                     listafunc.append(funcionarioDic(f+1,aleatorioFuncionario.nomes()+ " "+ aleatorioFuncionario.sobrenomes(),"medico"))
 
 
@@ -136,16 +136,24 @@ for p in range(0,27):
 #print("-="*20, "informacao")
 print(len(listaPresidente))
 
-resultDiretor=len(listaPresidente[0]['subalterno'])
-novalistaDiretor = listaPresidente[0]['subalterno']
+resultDiretor=len(listaPresidente[0]['superior'])
+novalistaDiretor = listaPresidente[0]['superior']
 print(resultDiretor)
-resultgerente=len(novalistaDiretor[0]['subalterno'])
-novalistaGerente=novalistaDiretor[0]['subalterno']
+resultgerente=len(novalistaDiretor[0]['superior'])
+novalistaGerente=novalistaDiretor[0]['superior']
 print(resultgerente)
-resultCoordendor=len(novalistaGerente[0]['subalterno'])
-novalistaCoordenador=novalistaGerente[0]['subalterno']
+resultCoordendor=len(novalistaGerente[0]['superior'])
+novalistaCoordenador=novalistaGerente[0]['superior']
 print(resultCoordendor)
-resultFunc = len(novalistaCoordenador[0]['subalterno'])
-novalistaFunc = novalistaCoordenador[0]['subalterno']
+resultFunc = len(novalistaCoordenador[0]['superior'])
+novalistaFunc = novalistaCoordenador[0]['superior']
 print(resultFunc)
 #print(novalistaDiretor)
+
+listaPresidente
+novalistaDiretor
+novalistaGerente
+novalistaCoordenador
+novalistaFunc
+
+
